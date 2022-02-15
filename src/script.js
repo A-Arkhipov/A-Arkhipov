@@ -1,3 +1,7 @@
 function Hello () {
-    alert('HellO!');
+    alert('Hello!');
+}
+
+function GitIt () {
+    alert('Git!')
 }
