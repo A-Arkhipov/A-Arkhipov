@@ -1,30 +1,34 @@
-let btn = document.querySelector('.b-5');
+// for
 
-// console.log(btn);
+// let div = document.querySelectorAll('.out');
+// console.log(div);
+// div.style.backgroundColor = 'red';
 
-btn.onclick = (event) => {
-    // event.preventDefault();
-    // console.log('Task')
-    // btn.innerHTML = Date();
-    // let inText = document.querySelector('.i-5').value;
-    // document.querySelector('.out-71').innerHTML = inText;
+// for (let i = 0; i < div.length; i += 1) {
+//     // console.log(i);
+//     div[i].style.background = 'red';
+//     div[i].onclick = click;
+// }
 
-    // console.log(inText.length);
-    // if (inText.length >= 6) {
-    //     document.querySelector('.b-5').style.backgroundColor = 'red';
-    // }
-    // else {
-    //     document.querySelector('.b-5').style.backgroundColor = 'green';
-    // }
+// function click() {
+//     console.log("Click!")
+// }
 
-    // document.querySelector('.i-1').value = document.querySelector('.i-2').value;
+// let b = document.getElementsByClassName('out');
+// console.log(b);
+// b[1].style.border = '1px solid green';
 
-    // document.querySelector('.out-5').innerHTML = 
-    //     document.querySelector('#text-1').value;
+// let c = document.getElementsByTagName('div');
+// console.log(c);
+
+document.querySelector('button').onclick = () => {
+    let r = document.querySelectorAll('input[type="radio"]');
+    console.log(r);
+    for (let i = 0; i < r.length; i++) {
+        if (r[i].checked) {
+            console.log(r[i].value);
+        }
+    }
 }
 
-document.querySelector('.sel-1').onchange = () => {
-
-    document.querySelector('.out-5').innerHTML = document.querySelector('.sel-1').value;
-    // document.querySelector('.out-5').innerHTML = '1';
-}
+// while
