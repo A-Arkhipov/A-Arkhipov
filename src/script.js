@@ -1,3 +1,5 @@
+//lesson 5
+
 // for
 
 // let div = document.querySelectorAll('.out');
