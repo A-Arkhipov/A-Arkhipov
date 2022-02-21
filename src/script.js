@@ -1,18 +1,33 @@
-//lesson 6
-let out = document.querySelector('.out');
-// for (let i = 0; i < 5; i++) {
+//lesson 7
+// one();
 
-//     for (let k = 0; k < 5; k++) {
-//         out.innerHTML += '*';
-//     }
-//     out.innerHTML += '<br>';
+let but = document.querySelector('.btn');
+
+// but.onclick = one;
+
+// function one() {
+//     console.log('Print')
 // }
 
-for (k = 1; k <= 9; k++) {
-    // out.innerHTML += k + "_";
-    for (let i = 1; i <= 9; i++) {
-        out.innerHTML += `${k} x ${i} = ${i * k} <br>`;
-        // out.innerHTML += i + ' ';
-    }
-    out.innerHTML += '<br>';
-}   
+// function name(a) {
+//     return a;
+// }
+
+// (a) => 2 * a;
+
+// // console.log(1 + one()); // undefined function result
+
+// function two() {
+//     return 7;
+// }
+
+let a2 = 8;
+
+function t2() {
+    return '<b>Bold</b>';
+}
+
+document.querySelector('.btn').onclick = (event) => {
+    event.preventDefault();
+    document.querySelector('.out-1').textContent = t2();
+}
