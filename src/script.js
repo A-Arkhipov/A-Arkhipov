@@ -1,43 +1,24 @@
-//lesson 9
+//lesson 10
 
-const one = document.querySelector(".one");
-let btn = document.querySelector(".btn");
+let c = ['Ivan', 37, 'Oven'];
+let d = [];
 
-btn.onclick = function () {
-    one.style.width = '105px';
-    one.style.paddingBottom = '40px';
-    console.log(btn, one);
+let out = document.querySelector('.out-1');
+let but = document.querySelector('.press');
 
-    one.classList.add('two', 'three');
+// but.onclick = () => {
+//     for (let i = 0; i < c.length; i++) {
+//         out.innerHTML += c[i] + ' ';
+//     }
 
-    one.classList.remove('two');
+// }
 
-    this.classList.toggle('three');
-}
+c.push('123');
+console.log(c);
 
-//attributes
+console.log(c.pop());
+console.log(c);
 
-// console.log(one.getAttribute('data'));
-// console.log(document.querySelector('link').getAttribute('href'));
-
-// one.setAttribute('data-num', 6);
-
-let gas = document.querySelectorAll('.gas');
-// console.log(gas.length);
-for (let i = 0; i < gas.length; i++) {
-    gas[i].onclick = function () {
-        let gallons = document.querySelector('.gallons').value;
-        let amount = this.getAttribute('data');
-        console.log(gallons * amount);
-    }
-}
-
-let a = document.createElement('div');
-a.innerHTML = 'Hello';
-a.classList.add('one');
-a.onclick = function () {
-    alert('Hello!');
-}
-
-document.querySelector('.test').appendChild(a);
-console.log(a);
+delete c[1];
+console.log(c);
+console.log(c[1]);
