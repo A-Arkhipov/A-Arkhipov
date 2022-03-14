@@ -1,24 +1,41 @@
-//lesson 10
+//lesson 11
 
-let c = ['Ivan', 37, 'Oven'];
-let d = [];
+const a = {
+    "a": 5,
+    "b": 'Hello',
+    "z2": 'Hi',
+    y43: 1999,
+    "villa de": 300,
+};
 
-let out = document.querySelector('.out-1');
-let but = document.querySelector('.press');
+a.yyy = 555;
 
-// but.onclick = () => {
-//     for (let i = 0; i < c.length; i++) {
-//         out.innerHTML += c[i] + ' ';
-//     }
+// a.z2 = 111;
 
-// }
+// console.log(a.z2);
 
-c.push('123');
-console.log(c);
+// let k = 'b';
+// console.log(a[k]);
 
-console.log(c.pop());
-console.log(c);
+delete a.a;
 
-delete c[1];
-console.log(c);
-console.log(c[1]);
+console.log(a);
+
+let out = 0;
+
+for (let key in a) {
+    if (Number.isInteger(a[key])) {
+        out += a[key];
+    }
+    // out += key + ' - ' + a[key] + '<br>';
+    // if (key == 'y43') {
+    //     delete a[key];
+    // }
+}
+
+console.log(out);
+// outA(a);
+
+function outA(outA) {
+    document.querySelector('.out-1').innerHTML = outA;
+}
