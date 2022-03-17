@@ -1,42 +1,26 @@
-//lesson 15
+//lesson 17
 
-// let a = new Set();
-// a.add(1);
-// a.add('text');
-// a.add(7);
-// a.add(1);
-// console.log(a);
-// console.log(a.keys());
+let b = document.querySelector('.tap');
+let c = document.querySelector('.add');
 
-let m = [];
-for (let i = 0; i < 10; i++) {
-    m[i] = Math.round(Math.random() * 5);
-}
+let a = [[1, 2, 3], [3, 4, 6], [4, 5, 7], [8, 9, 3]];
 
-console.log(m);
-
-let a = new Set(m);
-
-m = Array.from(a);
-
-console.log(m);
-
-// for (let i of a) {
-//     console.log(i);
+// for (let i = 0; i < 10; i++) {
+//     a[i] = Math.trunc(Math.random() * 30);
 // }
 
+console.log(a);
 
-// const set1 = new Set();
-// set1.add({ x: 10, y: 20 }).add({ x: 20, y: 30 });
+let a_res = [];
 
-// console.log(set1);
+b.onclick = () => {
+    a_res = a.filter(el => el.includes(3));
+    // console.log(element);
+    console.log(a_res);
+};
 
-// // Delete any point with `x > 10`.
-// set1.forEach((point) => {
-//     if (point.x > 20) {
-//         set1.delete(point);
-//     }
-// });
 
-// console.log(set1.has());
-// expected output: 1
+
+// function f2() {
+//     alert('Halt!');
+// }
