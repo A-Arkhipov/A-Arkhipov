@@ -1,34 +1,46 @@
-//lesson 18
+//lesson 19
 
-let a = { name: 'ivan', age: 15, sex: 1, id: 45 };
-
-for (let i in a) {
-    console.log(a[i]);
+document.querySelector('.one').onclick = function (event) {
+    console.log(event);
+    console.log('click');
 }
 
-// let a_res = [];
+// document.querySelector('.two').onclick = function () {
+//     console.log('click2');
+// }
 
-// let str = "hello world";
+document.querySelector('.two').ondblclick = () => {
+    console.log('double');
+}
 
-// a_res = str.split(' ');
-console.log(a);
+document.querySelector('.two').oncontextmenu = () => {
+    console.log('right button');
+    return false;
+}
 
-// console.log(a_res.join('-'));
 
-// let b = document.querySelector('.tap');
-// let sp = document.querySelectorAll('span');
-// console.log(sp);
-// // let aRR = aStr.split(', ');
+// let w = 75;
+// document.querySelector('.three').onmousemove = () => {
+//     document.querySelector('.three').style.width = w + 'px';
+//     w++;
+// }
 
-// // console.log(aRR);
-// // console.log(aRR.join());
-// b.onclick = () => {
-//     console.log('Top');
-//     sp.forEach(function (elem) {
-//         //     if (typeof elem === 'number') a_res.push(elem);
-//         // });
-//         a_res.push(elem.getAttribute('data'));
-//         // console.log(elem.getAttribute('data'));
-//     });
-//     console.log(a_res);
-// };
+document.querySelector('.three').onmouseenter = () => {
+    document.querySelector('.three').style.background = 'red';
+    console.log(1);
+}
+
+document.querySelector('.three').onmouseleave = () => {
+    document.querySelector('.three').style.background = 'green';
+    console.log(2);
+}
+
+document.querySelector('.three').onmousedown = () => {
+    document.querySelector('.three').style.background = 'pink';
+    console.log(2);
+}
+
+document.querySelector('.three').onmouseup = () => {
+    document.querySelector('.three').style.background = 'yellow';
+    console.log(2);
+}
