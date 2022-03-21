@@ -1,26 +1,34 @@
-//lesson 17
+//lesson 18
 
-let b = document.querySelector('.tap');
-let c = document.querySelector('.add');
+let a = { name: 'ivan', age: 15, sex: 1, id: 45 };
 
-let a = [[1, 2, 3], [3, 4, 6], [4, 5, 7], [8, 9, 3]];
+for (let i in a) {
+    console.log(a[i]);
+}
 
-// for (let i = 0; i < 10; i++) {
-//     a[i] = Math.trunc(Math.random() * 30);
-// }
+// let a_res = [];
 
+// let str = "hello world";
+
+// a_res = str.split(' ');
 console.log(a);
 
-let a_res = [];
+// console.log(a_res.join('-'));
 
-b.onclick = () => {
-    a_res = a.filter(el => el.includes(3));
-    // console.log(element);
-    console.log(a_res);
-};
+// let b = document.querySelector('.tap');
+// let sp = document.querySelectorAll('span');
+// console.log(sp);
+// // let aRR = aStr.split(', ');
 
-
-
-// function f2() {
-//     alert('Halt!');
-// }
+// // console.log(aRR);
+// // console.log(aRR.join());
+// b.onclick = () => {
+//     console.log('Top');
+//     sp.forEach(function (elem) {
+//         //     if (typeof elem === 'number') a_res.push(elem);
+//         // });
+//         a_res.push(elem.getAttribute('data'));
+//         // console.log(elem.getAttribute('data'));
+//     });
+//     console.log(a_res);
+// };
