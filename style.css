@@ -2,13 +2,13 @@
     text-align: center;
 }
 
-.block {
+/* .block {
     width: 75px;
     height: 75px;
     float: left;
     margin: 25px;
     border: 2px solid black;
-}
+} */
 
 hr {
     clear: both;
